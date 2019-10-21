@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+app-my-menu{
+    width: 15%;
+}
+app-main{
+    width: 85%;
+}

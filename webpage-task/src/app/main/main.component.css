@@ -1,0 +1,51 @@
+header{
+    background-color: #00a9f4;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    height: 70px;
+
+}
+svg{
+    margin: 15px;
+    width: 20px;
+    height: 20px;
+}
+input{
+    background-color: #0097db;
+    color: white;
+    width: 60%;
+    border-radius: 10px;
+    padding: 12px;
+    border:none; 
+}
+.wrapper{
+    background-color: #f6f6f6;
+    padding: 40px;
+}
+.download{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+}
+.buttons{
+    margin: 10px;
+    
+}
+button{
+    border-radius: 10px;
+    padding: 8px;
+    border: 1px solid #0097db;
+}
+.white{
+    background-color: white;
+    color: #0097db;
+}
+.blue{
+    background-color: #0097db;
+    color: white;
+}

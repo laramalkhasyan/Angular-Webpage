@@ -1,0 +1,24 @@
+div{
+    display: flex;
+    margin-top: 30px;
+    padding: 15px 6px;
+    text-align: center;
+    border-radius: 10px;
+}
+div:hover{
+    background-color: lightgrey;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}
+p{
+    margin: 0px;
+}
+
+.side-icon{
+    widows: 15px;
+    height: 15px;
+    margin-left: auto;
+}

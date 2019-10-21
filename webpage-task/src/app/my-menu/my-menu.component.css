@@ -1,0 +1,22 @@
+.menu{
+    padding: 8px;
+}
+.header{
+    text-align: center;
+    border-bottom: 1px solid grey;
+    font-size: 22px;
+    margin-top: 0px;
+}
+.header>p{
+    margin-top: 0;
+    text-align: center;
+
+    padding: 10px;
+}
+.upgrade{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 3px 6px;
+    border-radius: 10px;
+}
