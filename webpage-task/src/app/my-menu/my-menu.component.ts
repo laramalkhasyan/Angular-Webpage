@@ -9,33 +9,33 @@ import{Options} from '../options.interface';
 export class MyMenuComponent implements OnInit {
   options: Options[] = [{
     text: "Dashboard",
-    icon:"https://img.icons8.com/pastel-glyph/64/000000/monitor.png",
+    icon:"desktop_mac",
     side:""
   },
   {
     text: "Forms",
-    icon:"https://img.icons8.com/wired/64/000000/circled.png",
+    icon:"track_changes",
     side:""
   },
   {
     text: "UI Features",
-    icon:"https://img.icons8.com/ios-filled/50/000000/closed-window.png",
-    side:"https://img.icons8.com/metro/26/000000/expand-arrow.png"
+    icon:"dashboard",
+    side:"keyboard_arrow_down"
   },
   {
     text: "Tables",
-    icon:"https://img.icons8.com/ios-glyphs/30/000000/grid.png",
+    icon:"grid_on",
     side:""
   },
   {
     text: "Charts",
-    icon:"https://img.icons8.com/windows/32/000000/75-percents.png",
+    icon:"pie_chart_outlined",
     side:""
   },
   {
     text: "Sample Pages",
-    icon:"https://img.icons8.com/ios-glyphs/30/000000/square-brackets.png",
-    side:"https://img.icons8.com/metro/26/000000/expand-arrow.png"
+    icon:"pages",
+    side:"keyboard_arrow_down"
   },
 ]
   constructor() { }
