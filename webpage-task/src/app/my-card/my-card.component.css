@@ -1,22 +1,33 @@
 .card {
-  display: flex;
-  margin: 10px;
-  padding: 48px 32px;
-  text-align: center;
-  align-items: center;
-  background-color: white;
-  flex: wrap;
-  justify-content: flex-start;
-  width: 80%;
+    display: flex;
+    margin: 10px 0;
+    padding: 48px 32px;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    justify-content: flex-start;
+    margin-right: 20px;
+    width: 100%;
+    box-shadow: 0 1px 6px -1px rgba(0, 0, 0, 0.15);
 }
 
 .card-text {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+div.card-text>h3 {
+    font-size: 34px;
+    margin-bottom: 0px;
 }
 
 .card-icon {
-  padding: 10px;
-  text-align: center;
-  color: white;
+    padding: 10px;
+    color: white;
+    width: 86px;
+    height: 86px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
