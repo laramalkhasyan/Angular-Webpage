@@ -1,0 +1,38 @@
+header {
+  background-color: #00a9f4;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding: 15px;
+}
+
+mat-icon {
+  margin: 15px;
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+input {
+  background-color: #0097db;
+  color: white;
+  width: 60%;
+  border-radius: 10px;
+  padding: 12px;
+  border: none;
+}
+
+button {
+  border-radius: 5px;
+  padding: 8px;
+  border: 1px solid #0097db;
+  margin: 0 5px;
+}
+.menu-button {
+    background-color: transparent;
+    border: none;
+}
+.menu-icon {
+    color: #00a9f4;
+}

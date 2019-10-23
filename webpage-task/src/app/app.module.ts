@@ -4,6 +4,14 @@ import {FormsModule} from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatSelectModule} from '@angular/material/select';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +20,11 @@ import { MainComponent } from './main/main.component';
 import { MyOptionsComponent } from './my-options/my-options.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MyCardComponent } from './my-card/my-card.component';
+import { FormsComponent } from './forms/forms.component';
+import { RouterModule } from '@angular/router';
+import { HeaderComponent } from './header/header.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+
 
 @NgModule({
   declarations: [
@@ -19,16 +32,26 @@ import { MyCardComponent } from './my-card/my-card.component';
     MyMenuComponent,
     MainComponent,
     MyOptionsComponent,
-    MyCardComponent
+    MyCardComponent,
+    FormsComponent,
+    HeaderComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     FormsModule,
     MatIconModule,
     BrowserAnimationsModule,
     MatSidenavModule,
-    MatMenuModule
+    MatMenuModule,
+    RouterModule,
+    MatSlideToggleModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
