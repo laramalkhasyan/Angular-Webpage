@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import{Options} from '../options.interface';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-my-menu',
@@ -38,9 +39,13 @@ export class MyMenuComponent implements OnInit {
     side:"keyboard_arrow_down"
   },
 ]
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
-
+  isClicked(item){
+    if(item.text=="Forms"){
+      this.router.navigateByUrl('/forms');
+    }
+  }
 }

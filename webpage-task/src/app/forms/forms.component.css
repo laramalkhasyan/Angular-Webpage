@@ -1,45 +1,44 @@
 .first-section {
-  margin: 25px;
-  display: flex;
-  margin-top: 50px;
+    margin: 25px;
+    display: flex;
+    margin-top: 50px;
 }
 
 .slide {
-  background-color: white;
-  margin-right: 20px;
-  width: 50%;
-  padding: 30px;
-  box-shadow: 0 1px 6px -1px rgba(0, 0, 0, 0.15);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    background-color: white;
+    margin-right: 20px;
+    width: 50%;
+    padding: 30px;
+    box-shadow: 0 1px 6px -1px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .slide>div {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .mat-slide-toggle {
-  margin-right: 20px;
-
+    margin-right: 20px;
 }
 
 .select-menu {
-  background-color: white;
-  width: 50%;
-  padding: 30px;
-  box-shadow: 0 1px 6px -1px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    width: 50%;
+    padding: 30px;
+    box-shadow: 0 1px 6px -1px rgba(0, 0, 0, 0.15);
 }
 
 .select-food {
-  width: 50%;
+    width: 50%;
 }
 
 mat-select {
-  height: 100%;
+    height: 100%;
 }
 
-.second-section{
+.second-section {
     display: flex;
     flex-direction: column;
     margin: 25px;
@@ -47,20 +46,24 @@ mat-select {
     background-color: white;
     box-shadow: 0 1px 6px -1px rgba(0, 0, 0, 0.15);
 }
-.input-field{
+
+.input-field {
     display: flex;
 }
-.your-name{
+
+.your-name {
     width: 25%;
+    margin-right: 20px;
 }
-.with-icon{
+
+.with-icon {
     margin-left: 20px;
     justify-content: flex-start;
     padding-bottom: 20px;
     display: flex;
 }
 
-.third-section{
+.third-section {
     display: flex;
     flex-direction: column;
     margin: 25px;
@@ -68,10 +71,32 @@ mat-select {
     background-color: white;
     box-shadow: 0 1px 6px -1px rgba(0, 0, 0, 0.15);
 }
-.checkbox{
+
+.checkbox {
     margin: 20px;
 }
 
-.custom{
-    background-color: red;
+.mat-checkbox-background {
+    background-color: rgb(207, 22, 31);
+}
+
+mat-radio-button {
+    margin: 20px;
+}
+
+footer {
+    background-color: white;
+    padding: 20px;
+    padding-left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer>p {
+    margin: 0px;
+}
+
+footer>p>mat-icon {
+    color: red;
 }

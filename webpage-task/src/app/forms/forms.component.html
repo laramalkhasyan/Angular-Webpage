@@ -1,45 +1,63 @@
 <div class="forms-main">
-  <section class="first-section">
-    <div class="slide">
-      <h3>Switch</h3>
-      <div>
-        <mat-slide-toggle></mat-slide-toggle>
-        <mat-slide-toggle disabled="true"></mat-slide-toggle>
-      </div>
+    <section class="first-section">
+        <div class="slide">
+            <h3>Switch</h3>
+            <div>
+                <mat-slide-toggle></mat-slide-toggle>
+                <mat-slide-toggle disabled="true"></mat-slide-toggle>
+            </div>
 
-    </div>
-    <div class="select-menu">
-      <h4>Select Menu</h4>
-      <mat-form-field class="select-food">
-        <mat-label>Pick a Food Group</mat-label>
-        <mat-select>
-          <mat-option *ngFor="let food of foods" [value]="food">
-            {{food}}
-          </mat-option>
-        </mat-select>
-      </mat-form-field>
-    </div>
-  </section>
-  <section class="second-section">
-    <h4>Text Field</h4>
-    <div class="input-field">
-      <mat-form-field class="your-name">
-        <input matInput placeholder="Your Name" [(ngModel)]="name" required>
-        <mat-error *ngIf="isValid">{{errorMessage}}</mat-error>
-      </mat-form-field>
-      <mat-form-field class="your-name with-icon">
-        <mat-icon>calendar_today</mat-icon>
-        <input matInput placeholder="Your Name">
-      </mat-form-field>
-    </div>
-  </section>
-  <section class="third-section">
-    <h4>Checkbox</h4>
-    <div class="checkbox-buttons">
-      <mat-checkbox class="checkbox">Default</mat-checkbox>
-      <mat-checkbox disabled="true" class="checkbox">Disabled</mat-checkbox>
-      <mat-checkbox class="checkbox">Indeterminate</mat-checkbox>
-      <mat-checkbox class="checkbox">Custom colored</mat-checkbox>
-    </div>
-  </section>
+        </div>
+        <div class="select-menu">
+            <h4>Select Menu</h4>
+            <mat-form-field class="select-food">
+                <mat-label>Pick a Food Group</mat-label>
+                <mat-select>
+                    <mat-option *ngFor="let food of foods" [value]="food">
+                        {{food}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </section>
+    <section class="second-section">
+        <h4>Text Field</h4>
+        <div class="input-field">
+            <mat-form-field class="your-name">
+                <input matInput placeholder="Your Name" [(ngModel)]="name" required>
+                <mat-error *ngIf="isValid">{{errorMessage}}</mat-error>
+            </mat-form-field>
+            <mat-form-field class="your-name">
+                <input matInput [matDatepicker]="picker" placeholder="Your Name">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+        </div>
+    </section>
+    <section class="third-section">
+        <h4>Checkbox</h4>
+        <div class="checkbox-buttons">
+            <mat-checkbox class="checkbox">Default</mat-checkbox>
+            <mat-checkbox disabled="true" class="checkbox">Disabled</mat-checkbox>
+            <mat-checkbox class="checkbox">Indeterminate</mat-checkbox>
+            <mat-checkbox class="custom">Custom colored</mat-checkbox>
+        </div>
+    </section>
+    <section class="third-section">
+        <h4>Radio</h4>
+        <div class="radio-buttons">
+            <mat-radio-group aria-label="Select an option">
+                <mat-radio-button value="1">Default Radio 1</mat-radio-button>
+                <mat-radio-button value="2">Default Radio 2</mat-radio-button>
+                <mat-radio-button value="3">Custom Radio 1</mat-radio-button>
+                <mat-radio-button value="4">Custom Radio 2</mat-radio-button>
+            </mat-radio-group>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright © 2018 Bootstrap Dash. All rights reserved.</p>
+        <p>Hand-crafted & made with
+            <mat-icon>favorite</mat-icon>
+        </p>
+    </footer>
 </div>

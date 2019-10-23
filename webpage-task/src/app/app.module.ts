@@ -10,7 +10,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatCheckboxModule} from '@angular/material/checkbox';
-
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material';
+import {MatRadioModule} from '@angular/material/radio';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -51,7 +53,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MatSelectModule,
     MatFormFieldModule,
     MatInputModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
