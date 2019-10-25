@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-main',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-  formIsClicked = true
-  constructor() { }
+  clicked = 0;
 
-  ngOnInit() {
+
+  constructor(private activatedRoute: ActivatedRoute) {
   }
+  
+  ngOnInit() {
+      
+  
+   }
+   formIsClicked(event){
+    this.clicked = event
+   }
 
 }

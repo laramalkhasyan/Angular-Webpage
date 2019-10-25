@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output,EventEmitter } from '@angular/core';
 import{Options} from '../options.interface';
 import { Router } from '@angular/router';
 
@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./my-menu.component.css']
 })
 export class MyMenuComponent implements OnInit {
+  
+  @Output() clicked = new EventEmitter<boolean>();
   options: Options[] = [{
     text: "Dashboard",
     icon:"desktop_mac",
@@ -39,13 +41,18 @@ export class MyMenuComponent implements OnInit {
     side:"keyboard_arrow_down"
   },
 ]
+
   constructor(private router: Router) { }
 
   ngOnInit() {
   }
+  
   isClicked(item){
     if(item.text=="Forms"){
+      this.clicked.emit(false);
       this.router.navigateByUrl('/forms');
-    }
-  }
+      
+    }else if(item.text=="Dashboard"){
+      this.clicked.emit(true);
+    }}
 }
