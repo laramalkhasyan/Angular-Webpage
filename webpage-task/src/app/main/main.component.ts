@@ -7,7 +7,7 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-  clicked = 0;
+  clicked = true;
 
 
   constructor(private activatedRoute: ActivatedRoute) {
